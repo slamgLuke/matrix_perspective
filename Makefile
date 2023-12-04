@@ -1,5 +1,5 @@
 CFLAGS = -std=c99 -Wall -Wextra -Werror -pedantic
-LINKER_FLAGS = -lGL -lglfw -lGLEW -lcglm
+LINKER_FLAGS = -lGL -lglfw -lGLEW -lcglm -lm
 
 SRC_DIR = src
 BIN_DIR = bin
