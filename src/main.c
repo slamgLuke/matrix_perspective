@@ -226,11 +226,11 @@ int main()
         // move camera
         glm_look(camera_pos, camera_front, camera_up, view);
 
-
         // cube rotation
-        //glm_rotate(model, glm_rad(cube_rot_speed), (vec3){0.f, 1.f, 0.f});
-        //glm_rotate(model, glm_rad(cube_rot_speed), (vec3){1.f, 0.f, 0.f});
+        glm_rotate(model, glm_rad(cube_rot_speed), (vec3){0.f, 1.f, 0.f});
+        glm_rotate(model, glm_rad(cube_rot_speed), (vec3){1.f, 0.f, 0.f});
 
+        // update mvp
         glm_mat4_mul(projection, view, mvp);
         glm_mat4_mul(mvp, model, mvp);
 
